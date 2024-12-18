@@ -730,7 +730,7 @@ const main = async (provider: string, xrax: string) => {
     return await newReq(xrax);
 }
 
-export { main };
+module.exports = main;
 
 // const provider = "hanatyury.online"; //"megacloud.tube";
 // const id = "7y8XSLmmAON8"; //"ZSqTUSeq0vgp";
