@@ -4,7 +4,7 @@ import { main } from './rabbit.ts';
 const app = express();
 app.use(express.json());
 
-app.get('/:provider/:id', async (req, res) => {
+app.get('/rabbit/:provider/:id', async (req, res) => {
   try {
     const { provider, id } = req.params;
     if (!provider.includes(".")){
