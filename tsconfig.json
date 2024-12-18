@@ -3,6 +3,16 @@
     "types": ["node"],
     "target": "es2021",
     "lib": ["es2021", "DOM"],
-    "allowImportingTsExtensions": true
-  }
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["node_modules/*"]
+    }
+  },
+  "include": ["./*.ts"]
 }
